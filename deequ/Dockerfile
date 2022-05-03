@@ -1,6 +1,6 @@
 FROM python:3.9.12
 
-WORKDIR /home/sample_deequ
+WORKDIR /home/codes
 
 # setup to install sdkman to install Java
 RUN apt-get update
@@ -15,3 +15,6 @@ RUN source "/root/.sdkman/bin/sdkman-init.sh" \
 
 # install pyspark, pydeequ
 RUN pip install pyspark==3.0.2 pydeequ
+
+# install notebook
+RUN pip install notebook

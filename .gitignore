@@ -1,0 +1,3 @@
+# ignore the notebook files
+notebook/.ipynb_checkpoints/*
+notebook/*.ipynb
