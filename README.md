@@ -54,3 +54,5 @@ docker-compose up --build -d
 下記をホストマシンのブラウザに入力する.
 
 * http://localhost:8888
+
+jupyter notebook環境で作成したnotebookファイルや他ファイルについては, notebookフォルダに格納される.
