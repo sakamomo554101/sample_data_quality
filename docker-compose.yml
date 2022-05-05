@@ -1,0 +1,15 @@
+version: '3'
+services:
+  deequ_notebook_app:
+    image: deequ_notebook_app
+    build:
+      context: ./deequ
+      dockerfile: ./Dockerfile
+    container_name: deequ_notebook_app
+    volumes:
+      - ./deequ:/home/deequ/
+      - ./notebook:/home/codes/
+    tty: true
+    ports:
+      - 8888:8888
+    entrypoint: "jupyter notebook --port=8888 --ip=0.0.0.0 --allow-root --NotebookApp.token=''"
