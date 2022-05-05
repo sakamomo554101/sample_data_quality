@@ -56,3 +56,10 @@ docker-compose up --build -d
 * http://localhost:8888
 
 jupyter notebook環境で作成したnotebookファイルや他ファイルについては, notebookフォルダに格納される.
+
+<br>
+notebook上で下記のコードを追加し, JAVA SDKのパスを設定する.
+
+```
+%env JAVA_HOME=/root/.sdkman/candidates/java/current
+```
